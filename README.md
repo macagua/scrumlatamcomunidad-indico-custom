@@ -1,2 +1,4 @@
 # scrumlatamcomunidad-indico-custom
-Indico Software Custom Theme Files for "Scrum LATAM Comunidad"
+
+This repository holds the Indico customization files used for the "Scrum LATAM Comunidad" event management system deployment
+
