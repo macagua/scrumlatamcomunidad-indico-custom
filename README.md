@@ -7,7 +7,7 @@ This repository holds the Indico customization files used for the "Scrum LATAM C
 Following the Installation guides for [Production](https://docs.getindico.io/en/stable/installation/production/) environment.
 
 
-## Installing the Awesome theme plugin
+## Download the customization files
 
 Navigate to your Indico project and clone the theme repository:
 
