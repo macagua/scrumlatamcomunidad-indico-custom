@@ -13,7 +13,7 @@ Navigate to your Indico project and clone the theme repository:
 
 ```
 mkdir ~/src/ ; cd $_
-git clone https://github.com/macagua/scrumlatamcomunidad-indico-custom.git src/scrumlatamcomunidad-indico-custom
+git clone https://github.com/macagua/scrumlatamcomunidad-indico-custom.git ; cd -
 ```
 
 ## Set Customization Directory
@@ -27,7 +27,8 @@ echo -e "\n# Customization\nCUSTOMIZATION_DIR = '/opt/indico/src/scrumlatamcomun
 Then you need restart Indico service, executing the following command:
 
 ```
-systemctl restart nginx.service indico-celery.service indico-uwsgi.service
+sudo systemctl restart nginx.service indico-celery.service indico-uwsgi.service
+sudo systemctl status nginx.service indico-celery.service indico-uwsgi.service
 ```
 
 ## About Indico Software
