@@ -1,0 +1,14 @@
+{% macro get_subject() -%}
+    {% block subject_prefix %}[Eventos Scrum LATAM Comunidad]{% endblock %} {% block subject %}{% endblock %}
+{%- endmacro %}
+
+{% macro get_body(footer) %}
+    {%- block header %}Estimado(a) {% block header_recipient %}{% endblock %},
+
+{% endblock -%}
+{% block body -%}{%- endblock %}
+
+--
+Scrum LATAM Comunidad :: {% block footer_title %}Notificador de correo electrónico{% endblock %}
+{% block footer_url %}{{ url_for_index(_external=true) }}{% endblock %}
+{% endmacro %}
