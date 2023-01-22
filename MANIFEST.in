@@ -1,0 +1,6 @@
+graft scrumlatam/indico_template_overrides
+graft scrumlatam/static
+graft scrumlatam/templates
+
+global-exclude *.pyc __pycache__ .keep
+

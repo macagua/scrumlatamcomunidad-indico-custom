@@ -7,7 +7,9 @@ from indico.core.plugins import IndicoPlugin, IndicoPluginBlueprint
 
 
 class ScrumLATAMPlugin(IndicoPlugin):
-    """Indico Plugin for Scrum LATAM Comunidad customizations.
+    """Scrum LATAM Comunidad customizations
+
+    Indico Plugin for Scrum LATAM Comunidad.
 
     Args:
         IndicoPlugin (IndicoPlugin): Base class for an Indico plugin.
