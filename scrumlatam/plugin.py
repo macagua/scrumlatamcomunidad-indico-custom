@@ -7,6 +7,17 @@ from indico.core.plugins import IndicoPlugin, IndicoPluginBlueprint
 
 
 class ScrumLATAMPlugin(IndicoPlugin):
+    """Indico Plugin for Scrum LATAM Comunidad customizations.
+
+    Args:
+        IndicoPlugin (IndicoPlugin): Base class for an Indico plugin.
+
+    Returns:
+        IndicoPlugin: Base class for an Indico plugin.
+    """
+
+    friendly_name = 'Scrum LATAM Comunidad'
+
     def init(self):
         super(ScrumLATAMPlugin, self).init()
 
@@ -29,9 +40,22 @@ class ScrumLATAMPlugin(IndicoPlugin):
         self.inject_bundle('00-main.js')
 
     def _override_templates(self, sender, **kwargs):
+        """Overrides the Indico templates
+
+        Args:
+            sender (_type_): _description_
+
+        Returns:
+            string: a string which represents the root path of Indico templates Overrides
+        """
         return os.path.join(self.root_path, "indico_template_overrides")
 
     def _scrumlatam_head(self, **kwargs):
+        """Add some specific html into <head> (Open Sans, Fontawesome & Favicon)
+
+        Returns:
+            function: Renders a template from the plugin's template folder with the given context.
+        """
         return render_plugin_template("head.html")
 
     def get_blueprints(self):
