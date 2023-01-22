@@ -35,7 +35,4 @@ class ScrumLATAMPlugin(IndicoPlugin):
         return render_plugin_template("head.html")
 
     def get_blueprints(self):
-        blueprint = IndicoPluginBlueprint(
-            "scrumlatam", __name__, url_prefix="/scrumlatam"
-        )
-        return blueprint
+        return IndicoPluginBlueprint(self.name, __name__)
